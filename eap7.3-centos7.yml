@@ -13,7 +13,14 @@
     - name: "rhn_password"
       prompt: "Enter Your Red Hat Customer Portal Password"
       private: yes
+  
+  vars:
+    jboss_eap_base_version: 7.3
+    jboss_eap_artifact_name: jboss-eap-7.3.0.zip
+    jboss_eap_patch_artifact_name: jboss-eap-7.3.6-patch.zip
+    jboss_eap_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=80101
+    jboss_eap_patch_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=95421
 
   roles:
-    - redhat-cop.jboss_common
+    #- redhat-cop.jboss_common
     - redhat-cop.jboss_eap
