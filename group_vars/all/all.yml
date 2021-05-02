@@ -1,12 +1,14 @@
 ---
 # it may make sense to provide these at the host vars level
-ansible_centos_user: rhel
+ansible_centos_user: root
 
 ansible_rhel_user: root
 
 # Java 8 recommended
 # Full JDK (not just JRE) recommended. See https://access.redhat.com/solutions/18259
 eap_java_pkg_name: java-1.8.0-openjdk-devel
+
+jboss_eap_default_logging_timezone: Europe/Berlin
 
 # Override the default method. See https://github.com/rhtconsulting/jboss_eap/blob/master/README.md
 transfer_method: csp-to-host  #csp-to-host | copy-from-controller | file-server-to-host
