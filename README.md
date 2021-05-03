@@ -1,4 +1,6 @@
-# ansible-middleware-playbooks [![Build Status](https://travis-ci.org/redhat-cop/ansible-middleware-playbooks.svg)](https://travis-ci.org/redhat-cop/ansible-middleware-playbooks)
+# ansible-middleware-playbooks
+
+Updated for RHEL7/CentOS7 and JBoss EAP 7.3.
 
 ## Purpose
 
@@ -9,6 +11,7 @@ This repository provides a set of generic roles and reusable playbooks for deplo
 1. Update group_vars/all/all.yml to reflect your environment
 2. Update inventory.yml to reflect your environment
 3. Run `ansible-galaxy install -r requirements.yml -p ./roles` to download required roles from galaxy.
+4. Run `ansible-galaxy collection install -r requirements.yml` to download required collections from galaxy.
 
 ## Roles Used By These Playbooks
 
