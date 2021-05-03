@@ -1,7 +1,7 @@
 ---
 roles:
-  - src: redhat-cop.jboss_eap
-    name: redhat-cop.jboss_eap
+  - name: redhat-cop.jboss_eap
+    src: https://github.com/jwhb/jboss_eap
 
   - src: redhat-cop.jboss-common
     name: redhat-cop.jboss_common
