@@ -27,6 +27,7 @@
     jboss_eap_patch_artifact_name: jboss-eap-7.3.6-patch.zip
     jboss_eap_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=80101
     jboss_eap_patch_artifact_source: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=95421
+    jboss_eap_apply_patch: false
 
   collections:
     - wildfly.jcliff
@@ -46,7 +47,7 @@
         wfly_home: "{{ jboss_home }}"
         timeout: 7000
         subsystems:
-          - system_props:
+          - system_properties:
               - name: jcliff.enabled
                 value: 'enabled.plus'
           - deployments:
